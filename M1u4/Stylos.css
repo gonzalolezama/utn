@@ -1,3 +1,31 @@
 h1{
-    color: blue;
+    color: blue; /*asi agregamos un comentario al css*/
+     background-color: aqua;  /*color de fondo*/
+    text-align: center;
 }
+h2{
+    color: brown;
+    text-transform: uppercase;
+}
+p{
+    color: grey;
+    line-height: 35px;
+    text-align: justify;
+    width: 50%;
+}
+.Ejemplo{
+    color: goldenrod;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: oblique;
+}
+.Ejemplo2{
+    color: black;
+    font: size 25px;
+}
+
+ul{
+    color: blueviolet;
+    font-weight: bold;
+}
+#caja{}
