@@ -1,0 +1,332 @@
+/*
+font-family: "Open Sans", sans-serif;
+*/
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+header {
+    background-color: red;
+    padding: 15px 0;
+}
+
+header img {
+    margin-left: 15px;
+}
+
+header h2 {
+    color: white;
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+    display: inline-block;
+    position: relative;
+    bottom: 30px;
+    margin-left: 20px;
+
+}
+
+nav {
+    background-color: rgb(0, 213, 255);
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    flex-grow: 1;
+}
+
+nav ul li a {
+    color: white;
+    padding: 5px 6px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+
+}
+
+nav ul li a:hover {
+    color: white;
+    font-size: 110%;
+    background-color: rgba(146, 187, 249, 0.889);
+    box-shadow: 0 2px 2px rgba(146, 187, 249, 0.889);
+    transition: all 0.2s ease;
+
+}
+
+footer {
+    background-color: rgb(136, 140, 144);
+    text-align: center;
+    padding: 5px 10px;
+    margin-top: 20px;
+}
+
+nav ul li a.activo {
+    background-color: rgba(146, 187, 249, 0.889);
+}
+
+.holder {
+    max-width: 960px;
+    margin: 0 auto;
+    /* margin: auto; hace que un elemento no inline (podría ser block, flex, etc) con un ancho definido tenga márgenes automático (esto incluye derecha e izquierda) lo cual produce que el bloque se centre.
+hace que los elementos por mas ancho que se el monitor queden centrados le agrega un margen automatico tanto a la isquierda como a la derecha
+y usamos .antes para seleccionar un elemento.
+El punto antes de "mi-clase" le dice al navegador que aplique estas reglas de estilo a todos los elementos que tengan esa clase específica
+   las etiquetas como footer nav h2 no llevan punto 
+*/
+}
+
+h2 {
+    color: red;
+    font-weight: 600;
+    /* font-weight es el grosor de la letra*/
+}
+
+/*INICIO home*/
+.bienvenidos {
+    width: 75%;
+    padding-right: 10px;
+    box-sizing: border-box;
+    /* La propiedad box-sizing nos permite incluir el relleno y el borde en el ancho y alto totales de un elemento . Si establece box-sizing: border-box; en un elemento, el relleno y el borde se incluyen en el ancho y alto: ¡Ahora ambos divs tienen el mismo tamaño! */
+}
+
+.testimonios {
+    width: 25%;
+
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bienvenidos p {
+    font-size: 17px;
+}
+
+.testimonio {
+    background-color: rgb(136, 140, 144);
+    padding: 16px;
+    margin-top: 15px;
+    margin-left: 0px;
+    margin-bottom: 15px;
+}
+
+.testimonios .cita {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 17px;
+    display: block;
+
+}
+
+.testimonios .reseña {
+    text-align: center;
+}
+
+/*fin home reglas*/
+
+/*inicio estilos ventas*/
+.venta p {
+    font-size: 12px;
+}
+
+.propiedades {
+    display: flex;
+    justify-content: space-between;
+}
+
+.propiedad {
+    border: 1px solid rgb(97, 98, 103);
+    border-radius: 5px;
+    width: 18%;
+    text-align: center;
+    padding: 13px;
+    box-sizing: border-box;
+
+    /*background-color: yellow ;*/
+}
+
+.propiedad img {
+    border-radius: 50%;
+    max-width: 70%;
+    box-shadow: 0 0 5px rgb(97, 98, 103);
+}
+
+.propiedad h5,
+.propiedad h6 {
+    margin: 0;
+    font-weight: normal;
+    color: red;
+}
+
+.propiedad h5 {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.propiedad h6 {
+    font-size: 11px;
+    font-style: italic;
+}
+
+.propiedad p {
+    color: #666;
+    font-size: 10px;
+}
+
+/*fin nostoros*/
+/*inicio vender*/
+.vender {
+    border: 1px solid rgb(97, 98, 103);
+    border-radius: 10px;
+    text-align: center;
+    padding: 13px;
+    margin: 16px;
+    display: flex;
+    gap: 32px;
+    /*(gap es la separacion entre la imagen y el texto) que es el espacio entre filas y columnas dentro de la cuadrícula, flexión y diseño de múltiples columnas.*/
+    align-items: center;
+}
+
+.vender .info h4 {
+    color: red;
+    font-weight: 500;
+    /*font-weight:500 es la intencidad de la fuente en la otra pagina usamos normal*/
+    border-bottom: 1px solid rgb(97, 98, 103);
+    padding-bottom: 10px;
+    text-align: left
+}
+
+.vender .info p {
+    font-size: 13px;
+    text-align: justify;
+}
+
+.vender img {
+    border-radius: 13px;
+    display: block;
+    max-width: 225px;
+}
+
+.vender:nth-child(odd) {
+    /* even seria pares y odd impares y nth-child le esta diciendo que cuando los hijos sean pares (even) cambie la orientacion del contenido
+    y arranca de 0,1,2,3...*/
+    flex-direction: row-reverse;
+}
+
+/*fin vender*/
+/* inicio galeria*/
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    /*pueden ocupar varias lineas flex-wrap: wrap*/
+    justify-content: flex-start;
+}
+
+.galeria img {
+    width: 18%;
+    border: 1px solid rgb(97, 98, 103);
+    padding: 0.3em;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-right: 2%;
+}
+
+/*fin galeria*/
+/*inicio estilos alquiler*/
+.alquiler {
+    border-bottom: 1px solid rgb(97, 98, 103);
+}
+
+/*fin alquiler*/
+/*inicio estilos contacto*/
+.contacto {
+    display: flex;
+    gap: 24px;
+    /*separa los dos div o dos caja como que le pone una columna al medio*/
+
+}
+
+.contacto div {
+    width: 100%;
+}
+
+.datos p {
+    font-size: 13px;
+}
+
+.datos ul li {
+    font-size: 13px;
+}
+
+.formulario p {
+    display: flex;
+}
+
+.formulario p label {
+    min-width: 100px;
+    /* min-width ancho minimo de un elemento*/
+}
+
+.formulario p label {
+    display: flex;
+    align-items: center;
+
+}
+
+.formulario p:nth-child(4) {
+    /*p:nth-clhild (4) estamos indicanco que el cuarto parrafo tal cosa*/
+    align-items: start;
+}
+
+.formulario p input,
+.formulario p textarea {
+    width: 100%;
+}
+
+.formulario p input,
+.formulario p textarea {
+    background-color: rgb(224, 225, 229);
+    border-radius: 5px;
+    border: 1px solid rgb(140, 141, 142);
+    font-size: 14px;
+    padding: 6px 10px;
+}
+
+.formulario p textarea {
+    resize: ;
+    /*resize: se usa para que el cliente pueda agrandar el area con esas rayitas abajo a la derecha si no quiero que lo pueda modificar le pongo none*/
+    height: 150px;
+}
+
+/*fin contacto*/
+/*inicio clases del boton*/
+.formulario input[type="submit"] {
+    background: rgb(142, 142, 243);
+    width: auto;
+    position: relative;
+    left: 99px;
+    cursor: pointer;
+    /*para que aparesca la manito en el cursor*/
+    box-shadow: 0 0 10px rgb(140, 141, 142);
+    color: white;
+    padding: 6px 15px;
+    font-size: 16px;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: rgba(146, 187, 249, 0.889);
+}
+
+/*fin clase del boton*/
