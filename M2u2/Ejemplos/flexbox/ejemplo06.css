@@ -1,0 +1,25 @@
+.contenedor{
+	height: 500px;
+	background-color: blue;
+	display: flex;
+	align-items: flex-start;
+	/* align-items: flex-end; */
+	
+	align-items: baseline;
+	align-items: flex-end;
+	/* align-items: stretch; */
+	/* align-items: baseline; */
+	/* align-items: center; */
+}
+
+
+.item{
+	background-color: #ccc;
+	margin:10px;
+	font-size: 30px;
+	width: 100px;
+	height: 100px;
+	
+}
+
+

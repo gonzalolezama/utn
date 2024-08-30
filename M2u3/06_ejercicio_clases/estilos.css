@@ -1,0 +1,54 @@
+body {
+    background-color: #332F29;
+}
+
+.contenedor {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #8FA68E;
+    padding: 20px;
+
+}
+
+.holder {
+    display: flex;
+}
+
+nav {
+    background-color: #C0392B;
+    width: 30%;
+
+}
+
+nav ul li {
+    list-style: none;
+    padding: 10px;
+
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+
+main {
+    width: 40%;
+    background-color: #F7DC6F;
+}
+
+aside {
+    background-color: #1ABC9C;
+    width: 30%;
+}
+
+footer {
+    background-color: #CCC59E;
+    text-align: center;
+}
+
