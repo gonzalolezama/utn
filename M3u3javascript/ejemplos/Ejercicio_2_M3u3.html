@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2 Gonzalo Lezama</title>
+</head>
+<body>
+    <script>
+const numeros = [1,2,3,4,5,6,67,7,8,9,10];
+let mayor = 0;// 0 es porque empiesa a recorrer y siemepre comiensa desdde 0,1,2 ej el numero 1 es la posicion 0
+
+for( let i = 0; i < numeros.length; i++){ //el for nos sirve para recorrer let i= los empiesa a enumerar es como un indice length es una propiedad de cadenas, matrices y otros objetos de JavaScript que devuelve la cantidad de caracteres o elementos en ese objeto .//
+    if ( numeros [i] > mayor) {//i empiesa a reccorer desde la posicion 0 entonces si i es mayor mayor toma el nuemor de numeros [i] y asi sucecibamente si es menor sigue de largo sigue reccoriendo
+        mayor = numeros [i];
+    }  
+}
+console.log('el mayor de ' + numeros + ' es ' + mayor);
+document.write(`el mayor seria: ${mayor}`);
+//while(numeros){document.write(`${numeros}<br>`);numeros++;}
+
+    </script>
+    
+</body>
+</html>

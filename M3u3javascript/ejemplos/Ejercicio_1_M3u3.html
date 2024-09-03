@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 Lezama Gonzalo</title>
+</head>
+<body>
+    <script>
+        const distancia = parseInt(prompt ('Ingrese la distancia y le diremos el medio de transporte apropiado:', ''));
+        if (distancia >=0 && distancia <=1000) {document.write('Debe ir a Pie');} 
+        else if (distancia >1000 && distancia <=10000) {document.write('Debe ir en Bici');}
+        else if (distancia >10000 && distancia <=30000) {document.write('Debe ir en Colectivo');}
+        else if (distancia >30000 && distancia <=100000) {document.write('Debe ir en Auto');}
+        else if (distancia >100000) {document.write('Debe ir Avion');}
+             
+    </script>
+    
+</body>
+</html>
