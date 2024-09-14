@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="fondo" style="background-color: aqua;">
+    <h1>Ejercio 1 Modulo 3 unidad 4</h1>
+    <div id="caja1" style="border: solid black 4px; background-color: rgb(156, 156, 247);">Caja1</div>
+    <div id="caja2" style="border: solid black 4px; background-color: rgb(241, 230, 69);">Caja1</div>
+    <div id="caja3" style="border: solid black 4px; background-color: rgb(240, 178, 248);">Caja1</div>
+
+    <script>
+const caja1 = document.getElementById('caja1')
+const caja2 = document.getElementById('caja2')
+const caja3 = document.getElementById('caja3')
+const fondo = document.getElementById('fondo')
+
+caja1.addEventListener('click', function () {
+    fondo.style.backgroundColor = 'red'; 
+});
+
+caja2.addEventListener('click', function () {
+    fondo.style.backgroundColor = 'white'; 
+});
+
+caja3.addEventListener('click', function () {
+    fondo.style.backgroundColor = 'green'; 
+});
+    </script>
+</body>
+</html>
