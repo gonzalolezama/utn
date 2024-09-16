@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title></title>
+</head>
+
+<body>
+	<script>
+		const frutas = ["Manzana", "Banana", "Pera", "Sandia", "uva"];
+
+		console.log(frutas.length); //length es la cantidad por eso dice 4 y despues la nombra en el console log//
+		console.log(frutas); // 2
+			
+		const primero = frutas[3]; //manzana
+		console.log(primero)
+		
+		const ultimo = frutas[frutas.length-1]; // siempre es el ultimo
+		console.log(ultimo)
+		document.write(ultimo)
+
+		const vegetales = ['Repollo', 'Nabo', 'Rábano', 'Zanahoria'];
+		
+		console.log(vegetales);  // ["Repollo", "Nabo", "Rábano", "Zanahoria"]
+		
+		let seleccionado = 2;
+		console.log(vegetales[seleccionado]);
+		
+		seleccionado = 1;
+		console.log(vegetales[seleccionado]);
+		
+		for( let i = 0; i < vegetales.length; i++){ //el for nos sirve para recorrer let i= los empiesa a enumerar//
+			console.log('tenemos ' + vegetales[i])
+		}
+		
+		
+
+	</script>
+
+</body>
+</html>
