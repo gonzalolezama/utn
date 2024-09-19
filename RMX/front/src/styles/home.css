@@ -1,0 +1,40 @@
+.bienvenidos {
+    width: 75%;
+    padding-right: 10px;
+    box-sizing: border-box;
+    /* La propiedad box-sizing nos permite incluir el relleno y el borde en el ancho y alto totales de un elemento . Si establece box-sizing: border-box; en un elemento, el relleno y el borde se incluyen en el ancho y alto: ¡Ahora ambos divs tienen el mismo tamaño! */
+}
+
+.testimonios {
+    width: 25%;
+
+}
+
+.columnas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bienvenidos p {
+    font-size: 17px;
+}
+
+.testimonio {
+    background-color: rgb(136, 140, 144);
+    padding: 16px;
+    margin-top: 15px;
+    margin-left: 0px;
+    margin-bottom: 15px;
+}
+
+.testimonios .cita {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 17px;
+    display: block;
+
+}
+
+.testimonios .reseña {
+    text-align: center;
+}

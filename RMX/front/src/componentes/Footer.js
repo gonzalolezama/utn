@@ -7,4 +7,4 @@ const Footer = (Props) => {
     )
 }
 
-export default Footer
+export default Footer;

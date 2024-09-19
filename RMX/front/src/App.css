@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.holder {
+  max-width: 960px;
+  margin: 0 auto;
+  /* margin: auto; hace que un elemento no inline (podría ser block, flex, etc) con un ancho definido tenga márgenes automático (esto incluye derecha e izquierda) lo cual produce que el bloque se centre.
+hace que los elementos por mas ancho que se el monitor queden centrados le agrega un margen automatico tanto a la isquierda como a la derecha
+y usamos .antes para seleccionar un elemento.
+El punto antes de "mi-clase" le dice al navegador que aplique estas reglas de estilo a todos los elementos que tengan esa clase específica
+ las etiquetas como footer nav h2 no llevan punto 
+*/
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header {
+  background-color: red;
+  padding: 15px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+header img {
+  margin-left: 15px;
+}
+
+header h2 {
   color: white;
+  font-size: 50px;
+  font-weight: 400;
+  font-style: normal;
+  display: inline-block;
+  position: relative;
+  bottom: 30px;
+  margin-left: 20px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.holder {
+  max-width: 960px;
+  margin: 0 auto;
+  /* margin: auto; hace que un elemento no inline (podría ser block, flex, etc) con un ancho definido tenga márgenes automático (esto incluye derecha e izquierda) lo cual produce que el bloque se centre.
+hace que los elementos por mas ancho que se el monitor queden centrados le agrega un margen automatico tanto a la isquierda como a la derecha
+y usamos .antes para seleccionar un elemento.
+El punto antes de "mi-clase" le dice al navegador que aplique estas reglas de estilo a todos los elementos que tengan esa clase específica
+ las etiquetas como footer nav h2 no llevan punto 
+*/
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

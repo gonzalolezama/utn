@@ -21,11 +21,9 @@ function App() {
           <Route path="/comprar" element={<Comprar />} />
           <Route path="/vender" element={<Vender />} />
           <Route path='/contaco' element={<Contacto />} />
-
         </Routes>
       </BrowserRouter>
 
-      <Home />
       <Footer />
 
 
