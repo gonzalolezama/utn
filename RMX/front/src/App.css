@@ -15,6 +15,10 @@ El punto antes de "mi-clase" le dice al navegador que aplique estas reglas de es
 */
 }
 
+h2 {
+  color: red;
+  font-weight: 400;
+}
 header {
   background-color: red;
   padding: 15px 0;
