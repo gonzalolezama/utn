@@ -25,7 +25,7 @@ router.post('/agregar', async (req, res, nest) => { //usamos router.post porque 
     try {
         if (req.body.titulo != "" && req.body.subtitulo != "" && req.body.cuerpo != "") {
             await novedadesModel.insertNovedades(req.body);
-            res.redirect('admin/novedades')
+            res.redirect('/admin/novedades')
         } else {
             res.render('admin/agregar', {
                 layout: 'admin/layout',
