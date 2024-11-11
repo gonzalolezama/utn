@@ -17,6 +17,7 @@
     </div>
 </div>
 {{!-- fin fila 2 --}}
+
 {{!-- fila 3 --}}
 <div class="row">
     <div class="col">
@@ -35,8 +36,9 @@
                     <th scope="row"> {{id}} </th>
                     <td> {{titulo}} </td>
                     <td class="text-center">
-                        <a class="btn btn-secondary" href=""><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                        <a class="btn btn-secondary" href=""><i class="fa fa-trash" aria-hidden="true"></i></a>
+                        <a class="btn btn-secondary" href="/admin/novedades/modificar/{{id}}"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                        <a class="btn btn-secondary" href="/admin/novedades/eliminar/{{id}}"><i class="fa fa-trash"
+                                aria-hidden="true"></i></a>
                     </td>
                 </tr>
 
@@ -44,7 +46,7 @@
 
             </tbody>
         </table>
-     
+
     </div>
 </div>
 <div class="row">
@@ -54,5 +56,48 @@
     <div class="col-3 text-end">
         <a class="btn btn-success" href="/admin/novedades/comprar"><i class="fa fa-plus" aria-hidden="true"></i>
             Nuevo</a>
+    </div>
+</div>
+
+{{!Tabla propiedades a la venta}}
+<div class="row">
+    <div class="col">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">titulo</th>
+                    <th scope="col">zona</th>
+                    <th scope="col">tipo</th>
+                    <th scope="col">precio</th>
+                    <th scope="col">descripcion</th>
+                    <th scope="col">img</th>
+                    <th class="tex-end">Aciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#each comprar}} {{!-- #each recorre las novedades (tabla) y luego llama los campos estos codigo lo
+                sacamos de handlebars --}}
+                <tr>
+                    <th scope="row">{{id}}</th>
+                    <td> {{titulo}} </td>
+                    <td> {{zona}} </td>
+                    <td> {{tipo}} </td>
+                    <td> {{precio}} </td>
+                    <td> {{descripcion}} </td>
+                    <td> {{img}} </td>
+                    <td class="text-center">
+                        <a class="btn btn-secondary" href=""><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                        <a class="btn btn-secondary" href=""><i class="fa fa-trash" aria-hidden="true"></i></a>
+                    </td>
+                </tr>
+                {{/each}}
+                
+            </tbody>
+ 
+        </table>
+        
+
+
     </div>
 </div>

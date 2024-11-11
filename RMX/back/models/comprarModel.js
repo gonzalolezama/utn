@@ -1,10 +1,5 @@
 var pool = require('./bd'); // llamando datos BD
 
-async function getComprar() {
-  var query = 'select * from comprar';
-  var rows = await pool.query(query);
-  return rows;
-}
 
 async function insertComprar(obj) {
   try {
@@ -12,9 +7,9 @@ async function insertComprar(obj) {
     var rows = await pool.query(query, [obj]);
     return rows;
 
-  } catch (erro) {
+  } catch (error) {
     console.log(error);
     throw error;
   } // cierra catch
 } //cierra insert
-module.exports = { getComprar, insertComprar }
+module.exports = { insertComprar }
