@@ -26,6 +26,7 @@
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col">Titulo</th>
+                    <th scope="col">Imagen</th>
                     <th class="tex-end">Aciones</th>
                 </tr>
             </thead>
@@ -35,6 +36,7 @@
                 <tr>
                     <th scope="row"> {{id}} </th>
                     <td> {{titulo}} </td>
+                    <td> {{{imagen}}} </td> {{! con 3 llaves me trae la imagen con 2 la ruta}}
                     <td class="text-center">
                         <a class="btn btn-secondary" href="/admin/novedades/modificar/{{id}}"><i class="fa fa-pencil" aria-hidden="true"></i></a>
                         <a class="btn btn-secondary" href="/admin/novedades/eliminar/{{id}}"><i class="fa fa-trash"
@@ -68,10 +70,11 @@
                     <th scope="col">#</th>
                     <th scope="col">titulo</th>
                     <th scope="col">zona</th>
+                    <th scope="col">Ubicación</th>
                     <th scope="col">tipo</th>
                     <th scope="col">precio</th>
                     <th scope="col">descripcion</th>
-                    <th scope="col">img</th>
+                    <th scope="col">Imagen</th>
                     <th class="tex-end">Aciones</th>
                 </tr>
             </thead>
@@ -82,13 +85,14 @@
                     <th scope="row">{{id}}</th>
                     <td> {{titulo}} </td>
                     <td> {{zona}} </td>
+                    <td> {{ubicacion}} </td>
                     <td> {{tipo}} </td>
                     <td> {{precio}} </td>
                     <td> {{descripcion}} </td>
-                    <td> {{img}} </td>
+                    <td> {{{imagencompras}}} </td>
                     <td class="text-center">
-                        <a class="btn btn-secondary" href=""><i class="fa fa-pencil" aria-hidden="true"></i></a>
-                        <a class="btn btn-secondary" href=""><i class="fa fa-trash" aria-hidden="true"></i></a>
+                        <a class="btn btn-secondary" href="/admin/novedades/modificarcomprar/{{id}}"><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                        <a class="btn btn-secondary" href="/admin/novedades/eliminarcomprar/{{id}}"><i class="fa fa-trash" aria-hidden="true"></i></a>
                     </td>
                 </tr>
                 {{/each}}

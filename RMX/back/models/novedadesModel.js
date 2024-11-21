@@ -30,6 +30,7 @@ async function deleteNovedadesById(id) {
   return rows;
 } // cierra eliminar
 
+
 // para modificar algun dato del formulario editar
 
 // esta funcion es para que cargue los datos de una sola novedad a modificar
@@ -50,7 +51,11 @@ async function modificarNovedadesByid(obj, id) {
   }
 }
 
-
+async function getComprarByid(id) {
+  var query = 'select * from comprar where id = ?';
+  var rows = await pool.query(query, [id]);
+  return rows[0]; // esto es para que me traiga solo un ide el primero que conicida
+}
 
 
 

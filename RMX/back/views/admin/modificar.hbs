@@ -3,8 +3,9 @@
         <div class="col offset-1">
             <h4>Modificar una novedad</h4>
 
-            <form action="/admin/novedades/modificar" method="post">
-            <input type="hidden" value="{{novedad.id}}" name="id"> {{! con este input enviamos los datos y hidden imput oculto para indicarle que id vamos a modificar}}
+            <form action="/admin/novedades/modificar" method="post" enctype="multipart/form-data">
+                <input type="hidden" value="{{novedad.id}}" name="id"> {{! con este input enviamos los datos y hidden
+                imput oculto para indicarle que id vamos a modificar}}
                 <div class="mb-3 row">
                     <div class="col-sm-10">
                         <label for="">Titulo</label>
@@ -17,6 +18,20 @@
                         <textarea type="text" class="form-control" name="subtitulo">{{novedad.subtitulo}} </textarea>
                     </div>
                 </div>
+
+                <div class="mb-3 row">
+                    <p>
+                        <label>Imagen: <input type="file" class="form-control" name="imagen" id="imagen" /></label>
+                    </p>
+                    <p>
+                        <label>Imagen: <input type="checkbox" name="img_delete" id="img_delete" value="1">
+                            Eliminar Imagen Actual?</label>
+                        <input type="hidden" name="img_original" value="{{novedad.img_id}}"> {{!hiden dato oculto la imagen original}}
+                    </p>
+
+
+                </div>
+
                 <div class="mb-3 row">
                     <div class="col-sm-10">
                         <label for="">Cuerpo</label>
@@ -24,7 +39,7 @@
                     </div>
                 </div>
                 <div class="col-sm-10">
-                <button  type="submit" class="btn btn-primary">Modificar</button>
+                    <button type="submit" class="btn btn-primary">Modificar</button>
                 </div>
             </form>
             {{#if error}}

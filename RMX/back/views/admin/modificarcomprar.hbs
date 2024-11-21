@@ -1,0 +1,66 @@
+<div class="container" style="margin-top:100px">
+    <div class="row">
+        <div class="col offset-1">
+            <h4>Modificar una Propiedad a la Venta</h4>
+
+            <form action="/admin/novedades/modificarcomprar" method="post" enctype="multipart/form-data">
+                <input type="hidden" value="{{comprar.id}}" name="id"> {{! con este input enviamos los datos y hidden
+                imput oculto para indicarle que id vamos a modificar}}
+                <div class="mb-3 row">
+                    <div class="col-sm-10">
+                        <label for="">Titulo</label>
+                        <input type="text" class="form-control" value="{{comprar.titulo}}" name="titulo">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <div class="col-sm-10">
+                        <label for="">Zona</label>
+                        <textarea type="text" class="form-control" name="zona">{{comprar.zona}}</textarea>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <div class="col-sm-10">
+                        <label for="">Ubicación</label>
+                        <textarea type="text" class="form-control" name="ubicacion">{{comprar.ubicacion}}</textarea>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <div class="col-sm-10">
+                        <label for="">Tipo</label>
+                        <textarea type="text" class="form-control" name="tipo">{{comprar.tipo}}</textarea>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <p>
+                        <label>Imagen: <input type="file" class="form-control" name="imagen"
+                                id="imagen" /></label>
+                    </p>
+                    <p>
+                        <label>Imagen: <input type="checkbox" name="img_delete" id="img_delete" value="1">
+                            Eliminar Imagen Actual?</label>
+                        <input type="hidden" name="img_original" value="{{comprar.img_id}}"> {{!hiden dato oculto la
+                        imagen original}}
+                    </p>
+
+                </div>
+
+                <div class="mb-3 row">
+                    <div class="col-sm-10">
+                        <label for="">Precio</label>
+                        <textarea type="text" class="form-control" name="precio">{{comprar.precio}}</textarea>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <div class="col-sm-10">
+                        <label for="">Descripción</label>
+                        <textarea type="text" class="form-control" name="descripcion">{{comprar.descripcion}}</textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Guardar</button>
+            </form>
+            {{#if error}}
+            <p>{{message}}</p>
+            {{/if}}
+        </div>
+    </div>
+</div>
