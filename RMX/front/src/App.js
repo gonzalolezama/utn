@@ -8,7 +8,7 @@ import Home from './paginas/Home';
 import NovedadesPage from './paginas/NovedadesPage';
 import Comprar from './paginas/Comprar';
 import Vender from './paginas/Vender';
-import Contacto from './paginas/Contacto';
+import ContactoPage from './paginas/ContactoPage'
 
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
           <Route path="/novedades" element={<NovedadesPage />} />
           <Route path="/comprar" element={<Comprar />} />
           <Route path="/vender" element={<Vender />} />
-          <Route path='/contaco' element={<Contacto />} />
+          <Route path="/contaco" element={<ContactoPage />} />
         </Routes>
       </BrowserRouter>
 
