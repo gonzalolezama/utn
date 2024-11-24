@@ -1,5 +1,6 @@
 import './../styles/contacto.css';
-import { useState } from 'react';
+import React, { useState } from 'react';
+
 import axios from 'axios';
 
 const ContactoPage = (props) => {
@@ -27,7 +28,8 @@ const ContactoPage = (props) => {
         e.preventDefault();
         setMsg('');
         setSending(true)
-        const response = await axios.post('http://localhost:3000/api/contacto', formData);
+        const response = await 
+        axios.post('http://localhost:3000/api/contacto', formData);
         setSending(false);
         setMsg(response.data.message);
         if (response.data.error === false) {
